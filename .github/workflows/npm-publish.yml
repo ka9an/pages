@@ -20,7 +20,7 @@ jobs:
       - run: npm run build
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: ${{secrets.NPM}}
 
   publish-gpr:
     runs-on: ubuntu-latest
